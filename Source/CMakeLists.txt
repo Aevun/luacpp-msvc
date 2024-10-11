@@ -33,7 +33,6 @@ include_directories(example_HelloLua PRIVATE ${LUA_INCLUDE_DIR})
 
 add_library(luacpp SHARED ${SOURCE_FILES})
 add_library(luacpp_static STATIC ${SOURCE_FILES})
-set_target_properties(luacpp_static PROPERTIES OUTPUT_NAME luacpp)
 target_link_libraries(luacpp ${LUA_LIBRARIES})
 target_link_libraries(luacpp_static ${LUA_LIBRARIES})
 
