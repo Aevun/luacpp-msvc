@@ -25,6 +25,11 @@
 #ifndef LUACPP_LUA_HPP
 #define LUACPP_LUA_HPP
 
+// Many other files include this one, none of which include <string> manually.  We add this
+// here to prevent needing a ton of edits.
+#include <string>
+#include <vector>
+
 #ifdef __cplusplus
   extern "C" {
      #include "lua.h"

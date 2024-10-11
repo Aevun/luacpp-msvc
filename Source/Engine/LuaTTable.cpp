@@ -37,10 +37,10 @@ namespace LuaCpp {
 	namespace Engine {
 		namespace Table {
 			bool operator <(const Key &lhs, const Key &rhs){
-				if (lhs._isNumber and rhs._isNumber) {
+				if (lhs._isNumber && rhs._isNumber) {
 					return lhs.int_val < rhs.int_val;
 				}
-				if (!lhs._isNumber and !rhs._isNumber) {
+				if (!lhs._isNumber && !rhs._isNumber) {
 					return lhs.str_val < rhs.str_val;
 				}
 				if (lhs._isNumber) {

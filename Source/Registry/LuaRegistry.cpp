@@ -36,7 +36,7 @@ void LuaRegistry::CompileAndAddString(const std::string &name, const std::string
 
 void LuaRegistry::CompileAndAddString(const std::string &name, const std::string &code, bool recompile) {
 
-	if ( !Exists(name) or recompile ) { 
+	if ( !Exists(name) || recompile ) {
 		LuaCompiler cmp;
 		std::unique_ptr<LuaCodeSnippet> snp = cmp.CompileString(name, code);
 
@@ -50,7 +50,7 @@ void LuaRegistry::CompileAndAddFile(const std::string &name, const std::string &
 
 void LuaRegistry::CompileAndAddFile(const std::string &name, const std::string &fname, bool recompile) {
 
-	if ( !Exists(name) or recompile ) { 
+	if ( !Exists(name) || recompile ) {
 		LuaCompiler cmp;
 		std::unique_ptr<LuaCodeSnippet> snp = cmp.CompileFile(name, fname);
 
