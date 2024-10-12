@@ -15,6 +15,6 @@ set_and_check(LuaCpp_INSTALL_LIBDIR "@PACKAGE_LuaCpp_INSTALL_LIBDIR@")
 find_package(Lua REQUIRED)
 
 set(LUACPP_INCLUDE_DIR "${LuaCpp_INCLUDE_DIR};${LUA_INCLUDE_DIR}")
-set(LUACPP_LIBRARIES "${LuaCpp_INSTALL_LIBDIR}/libluacpp.so;${LUA_LIBRARIES}")
+set(LUACPP_LIBRARIES "${LuaCpp_INSTALL_LIBDIR}/luacpp_static.lib;${LUA_LIBRARIES}")
 
 check_required_components(LuaCpp)
